@@ -1,0 +1,86 @@
+/* ***** GOOGLE FONT IMPORTS ***** */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+
+/* ***** GLOBAL RULES ***** */
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+/* ***** HEADER ***** */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0 2px 4px #00000026;
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  height: 36px;
+  width: 53%;
+}
+
+.location {
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: 0 4px 4px #00000025;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.location img {
+  width: 12px;
+  height: 16px;
+  margin: 0 15px 0 106px;
+}
+
+.location button {
+  border-style: none;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 18.75px;
+}
+
+/* ***** BROWSER BUTTON ***** */
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: center;
+  margin-top: 40px;
+  height: 68px;
+  width: 257px;
+}
+
+.browser-button button {
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 1) 1%,
+    rgba(255, 121, 218, 1) 99%
+  );
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 18.75px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0 solid transparent;
+  box-shadow: 0 4px 4px 0 #00000025;
+}
