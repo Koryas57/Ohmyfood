@@ -7,10 +7,12 @@
 
 * {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: #f6f6f6;
+  min-width: 320px;
 }
 
 /* ***** HEADER ***** */
@@ -27,7 +29,7 @@ header {
 
 header img {
   height: 36px;
-  width: 53%;
+  width: 197px;
 }
 
 .location {
@@ -37,13 +39,13 @@ header img {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .location img {
   width: 12px;
   height: 16px;
-  margin: 0 15px 0 106px;
+  margin: 0 15px 0 -18px;
 }
 
 .location button {
@@ -51,21 +53,28 @@ header img {
   background-color: #eaeaea;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   line-height: 18.75px;
 }
 
-/* ***** BROWSER BUTTON ***** */
+/* ***** BROWSER BUTTON SECTION ***** */
 
-.title {
-  font-family: "Roboto", sans-serif;
+section .title {
+  height: 68px;
+}
+
+.title h1 {
+  height: 68px;
+  width: 275px;
+  margin: 40px auto 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28.13px;
   text-align: center;
-  margin-top: 40px;
-  height: 68px;
-  width: 257px;
+}
+
+.browser-button {
+  display: flex;
+  flex-direction: column;
 }
 
 .browser-button button {
@@ -77,10 +86,55 @@ header img {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
   line-height: 18.75px;
+  margin: 0 auto;
+  padding: 15px 25px;
   height: 50px;
   border-radius: 25px;
   border: 0 solid transparent;
   box-shadow: 0 4px 4px 0 #00000025;
+}
+
+.browser-button p {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 315px;
+  height: 46px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+/* ***** FUNCTIONING SECTION ***** */
+
+.functioning {
+  background-color: #ffffff;
+  height: 440px;
+  margin: 50px 0;
+}
+
+.functioning .title {
+  padding: 40px 16px 0;
+}
+
+.functioning ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.functioning li {
+  list-style-type: none;
+  width: 322.49px;
+  height: 72.38px;
+  line-height: 71.75px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px #00000015;
 }
