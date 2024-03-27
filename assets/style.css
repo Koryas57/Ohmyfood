@@ -115,6 +115,8 @@ section .title {
 
 .functioning .title {
   padding: 40px 16px 0;
+  text-align: center;
+  margin-left: -178px;
 }
 
 .functioning ul {
@@ -126,7 +128,25 @@ section .title {
   gap: 30px;
 }
 
-.functioning li {
+.functioning-button span {
+  position: relative;
+  top: 0px;
+  left: -40px;
+  border: 1px solid #9356dc;
+  border-radius: 150px;
+  color: #ffffff;
+  background-color: #9356dc;
+  height: 24px;
+  width: 24px;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14.18px;
+}
+
+.functioning-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   list-style-type: none;
   width: 322.49px;
   height: 72.38px;
