@@ -60,6 +60,8 @@ header img {
 
 section .title {
   height: 68px;
+  text-align: center;
+  margin-left: -212px;
 }
 
 .title h1 {
@@ -116,7 +118,7 @@ section .title {
 .functioning .title {
   padding: 40px 16px 0;
   text-align: center;
-  margin-left: -178px;
+  margin-left: -175px;
 }
 
 .functioning ul {
@@ -157,4 +159,100 @@ section .title {
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0 4px 15px #00000015;
+}
+
+/* ***** RESTAURANT SECTION ***** */
+
+.restaurants {
+  margin: 0 auto 60px;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ***** CARD DETAILS ***** */
+
+.restaurant-card {
+  height: 251px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px 0 #00000010;
+}
+
+.restaurant-card a {
+  display: block;
+}
+
+.restaurant-card img {
+  width: 346px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant-card-content {
+  display: flex;
+  padding: 15px 0 15px 15px;
+}
+
+.card-content-txt h3 {
+  padding-bottom: 5px;
+}
+
+.card-heart img {
+  width: 22px;
+  height: 21px;
+  object-fit: inherit;
+  border-radius: 0;
+  padding: 10px 0 0 130px;
+}
+
+img[alt="Liked"] {
+  padding-left: 168px;
+}
+
+/* ***** FOOTER ***** */
+
+footer {
+  background-color: #353535;
+  height: 186px;
+}
+
+footer img {
+  /* display: none; */
+  filter: invert(150);
+  width: 137.58px;
+  height: 27px;
+  padding: 20px 0 10px 40px;
+}
+
+footer h4 {
+  display: none;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26.24px;
+  color: #ffffff;
+  width: 137.58px;
+  height: 27px;
+  padding: 20px 0 20px 40px;
+}
+
+footer ul {
+  width: 190px;
+  height: 99px;
+}
+
+footer li {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #ffffff;
+  padding: 5px 0;
 }
