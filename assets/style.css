@@ -185,6 +185,7 @@ section .title {
 
 .restaurant-card a {
   display: block;
+  height: 175px;
 }
 
 .restaurant-card img {
@@ -192,6 +193,21 @@ section .title {
   height: 175px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+
+a p {
+  height: 16px;
+  width: 61.37px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #008766;
+  background-color: #99e2d0;
+  box-shadow: 0 2px 4px 0 #00000015;
+  position: relative;
+  top: -170px;
+  left: 260px;
+  border-radius: 2px;
 }
 
 .restaurant-card-content {
@@ -225,9 +241,10 @@ footer {
 footer img {
   /* display: none; */
   filter: invert(150);
-  width: 137.58px;
-  height: 27px;
-  padding: 20px 0 10px 40px;
+  width: 100.58px;
+  height: 20px;
+  padding: 20px 0 10px 0;
+  margin-left: 40px;
 }
 
 footer h4 {
