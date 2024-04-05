@@ -1,0 +1,391 @@
+/* Importer dans l'ordre */
+/* Pour le header */
+header {
+  width: 100%;
+  height: 50vh;
+  color: #9356DC;
+}
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1490196078);
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  height: 36px;
+  width: 197px;
+}
+
+img[alt="Fleche de retour"] {
+  height: 18px;
+  width: 17.2px;
+  position: absolute;
+  top: 24px;
+  left: 40px;
+}
+
+.location {
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1450980392);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location img {
+  width: 12px;
+  height: 16px;
+  margin: 0 15px 0 -18px;
+}
+
+.location button {
+  border-style: none;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+
+section .title {
+  height: 68px;
+  text-align: center;
+  margin-left: -212px;
+}
+
+.title h1 {
+  height: 68px;
+  width: 275px;
+  margin: 40px auto 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: center;
+}
+
+.browser-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-button button {
+  background: linear-gradient(0deg, #9356DC 1%, rgb(255, 121, 218) 99%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0 solid transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
+}
+
+.browser-button p {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 315px;
+  height: 46px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.functioning {
+  background-color: #ffffff;
+  height: 440px;
+  margin: 50px 0;
+}
+
+.functioning .title {
+  padding: 40px 16px 0;
+  text-align: center;
+  margin-left: -175px;
+}
+
+.functioning ul {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.functioning-button span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border: 1px solid #9356dc;
+  border-radius: 150px;
+  color: #ffffff;
+  background-color: #9356dc;
+  height: 24px;
+  width: 24px;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14.18px;
+}
+
+.functioning-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 85%;
+  height: 72.38px;
+  line-height: 71.75px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.0823529412);
+}
+
+.restaurants {
+  margin: 0 auto 60px;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.restaurant-card {
+  height: 251px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.062745098);
+}
+
+.restaurant-card a {
+  display: block;
+  height: 175px;
+}
+
+.restaurant-card img {
+  width: 346px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+a p {
+  margin-block-start: 0;
+  height: 16px;
+  width: 61.37px;
+  padding: 6px 6px 5px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #008766;
+  background-color: #99e2d0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
+  position: relative;
+  top: -165px;
+  left: 250px;
+  border-radius: 2px;
+}
+
+.restaurant-card-content {
+  display: flex;
+  padding: 15px 0 15px 15px;
+}
+
+.card-content-txt h3 {
+  padding-bottom: 5px;
+}
+
+.card-heart img {
+  width: 22px;
+  height: 21px;
+  object-fit: inherit;
+  border-radius: 0;
+  padding: 10px 0 0 130px;
+}
+
+img[alt=Liked] {
+  padding-left: 168px;
+}
+
+footer {
+  background-color: #353535;
+  height: 186px;
+}
+
+footer img {
+  width: 11px;
+  height: 13px;
+  padding-right: 10px;
+}
+
+img[alt="Logo Ohmyfood"] {
+  /* display: none; */
+  filter: invert(150);
+  width: 100.58px;
+  height: 20px;
+  padding: 20px 0 10px 0;
+  margin-left: 40px;
+}
+
+footer h4 {
+  display: none;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26.24px;
+  color: #ffffff;
+  width: 137.58px;
+  height: 27px;
+  padding: 20px 0 20px 40px;
+}
+
+footer ul {
+  width: 190px;
+  height: 99px;
+}
+
+footer li {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.restaurant-preview img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-menu {
+  position: absolute;
+  top: 275px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 30px 10px 10px;
+}
+
+.menu-title h1 {
+  font-family: "Shrikhand", sans-serif;
+  height: 29px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40.82px;
+  padding-right: 17px;
+}
+
+.menu-title img {
+  width: 22px;
+  height: 21px;
+  margin-top: 7px;
+  color: #101010;
+}
+
+.menu-items {
+  margin: 10px auto;
+}
+
+.menu-items h2 {
+  border-bottom: 3px solid #99E2D0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18.75px;
+  width: 40px;
+  margin: 20px 0 10px 15px;
+}
+
+.menu-items h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
+  padding-bottom: 5px;
+}
+
+.menu-items h4 {
+  font-size: 15.04px;
+  font-weight: 300;
+}
+
+.menu-items ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.menu-items li {
+  background-color: #ffffff;
+  margin: 15px 0;
+  border-radius: 15px;
+  padding: 0 15px;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.062745098);
+}
+
+.menu-items p {
+  margin-top: 27px;
+  font-weight: 700;
+  font-size: 15.04px;
+  line-height: 17.63px;
+  color: #353535;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button button {
+  background: linear-gradient(0deg, #9356DC 1%, rgb(255, 121, 218) 99%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  margin: 25px auto 45px;
+  padding: 15px 25px;
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  border: 0 solid transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
+}
+
+/*# sourceMappingURL=style.css.map */

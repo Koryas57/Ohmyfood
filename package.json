@@ -1,0 +1,27 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 4 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass":"npx sass --watch ./sass/style.scss:./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koryas57/Ohmyfood.git"
+  },
+  "keywords": [
+    "Node",
+    "Javascript",
+    "Sass"
+  ],
+  "author": "Yacine Nezreg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koryas57/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Koryas57/Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}
