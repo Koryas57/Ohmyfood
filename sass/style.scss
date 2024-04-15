@@ -1,7 +1,6 @@
 // ***** IMPORTS *****
 
 @import "./utils/_variables.scss"; /* Importer dans l'ordre */
-@import "./utils/_header.scss";
 
 // ***** GLOBAL RULES *****
 
@@ -10,12 +9,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f6f6f6;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 // ***** HEADER *****
@@ -28,11 +32,11 @@ header {
   box-shadow: 0 2px 4px #00000026;
   position: relative;
   z-index: 1;
-}
 
-header img {
-  height: 34px;
-  width: 197px;
+  img {
+    height: 34px;
+    width: 197px;
+  }
 }
 
 img[alt="Fleche de retour"] {
@@ -51,73 +55,72 @@ img[alt="Fleche de retour"] {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.location img {
-  width: 12px;
-  height: 16px;
-  margin: 0 15px 0 -18px;
-}
+  img {
+    width: 12px;
+    height: 16px;
+    margin: 0 15px 0 -18px;
+  }
 
-.location button {
-  border-style: none;
-  background-color: #eaeaea;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
+  button {
+    border-style: none;
+    background-color: #eaeaea;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+  }
 }
 
 // ***** BROWSER BUTTON SECTION *****
 
-section .title {
+.title {
   height: 68px;
-}
 
-.title h1 {
-  height: 68px;
-  width: 275px;
-  margin: 40px auto 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28.13px;
-  text-align: center;
+  h1 {
+    height: 68px;
+    width: 62%;
+    margin: 40px auto 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+  }
 }
 
 .browser-button {
   display: flex;
   flex-direction: column;
-}
 
-.browser-button a {
-  text-align: center;
-}
+  a {
+    text-align: center;
+  }
 
-.browser-button button {
-  background: linear-gradient(
-    0deg,
-    $color-primary 1%,
-    rgba(255, 121, 218, 1) 99%
-  );
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  margin: 0 auto;
-  padding: 15px 25px;
-  height: 50px;
-  border-radius: 25px;
-  border: 0 solid transparent;
-  box-shadow: 0 4px 4px 0 #00000025;
-}
+  p {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 96%;
+    height: 46px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21.09px;
+  }
 
-.browser-button p {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 96%;
-  height: 46px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21.09px;
+  button {
+    background: linear-gradient(0deg, $color-primary 1%, $color-secondary 99%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0 solid transparent;
+    box-shadow: 0 4px 4px 0 #00000025;
+    &:hover {
+      @include hover;
+    }
+  }
 }
 
 // ***** FUNCTIONING SECTION *****
@@ -126,55 +129,55 @@ section .title {
   background-color: #ffffff;
   height: 440px;
   margin: 50px 0;
-}
 
-.functioning .title {
-  padding-top: 40px;
-  width: 90%;
-  margin: auto;
-  max-width: 1060px;
-}
+  .title {
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+    max-width: 1060px;
+  }
 
-.functioning ul {
-  padding-inline-start: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  gap: 30px;
-}
+  ul {
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+  }
 
-.functioning-button span {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border: 1px solid #9356dc;
-  border-radius: 150px;
-  color: #ffffff;
-  background-color: #9356dc;
-  height: 24px;
-  width: 24px;
-  line-height: 25px;
-  font-weight: 500;
-  font-size: 14.18px;
-}
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border: 1px solid #9356dc;
+    border-radius: 150px;
+    color: #ffffff;
+    background-color: #9356dc;
+    height: 24px;
+    width: 24px;
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 14.18px;
+  }
 
-.functioning-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style-type: none;
-  width: 85%;
-  height: 72.38px;
-  line-height: 71.75px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px #00000015;
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 85%;
+    height: 72.38px;
+    line-height: 71.75px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px #00000015;
+  }
 }
 
 // ***** RESTAURANT SECTION *****
@@ -199,35 +202,35 @@ section .title {
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0 4px 15px 0 #00000010;
-}
 
-.restaurant-card a {
-  display: block;
-  height: 175px;
-  position: relative;
-}
+  a {
+    display: block;
+    height: 175px;
+    position: relative;
 
-.restaurant-card img {
-  width: 100%;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
+    p {
+      margin-block-start: 0;
+      height: 16px;
+      width: 61.37px;
+      padding: 6px 6px 5px 12px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #008766;
+      background-color: #99e2d0;
+      box-shadow: 0 2px 4px 0 #00000015;
+      position: absolute;
+      top: 1.5vh;
+      right: 3.5vw;
+      border-radius: 2px;
+    }
+  }
 
-a p {
-  margin-block-start: 0;
-  height: 16px;
-  width: 61.37px;
-  padding: 6px 6px 5px 12px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #008766;
-  background-color: #99e2d0;
-  box-shadow: 0 2px 4px 0 #00000015;
-  position: absolute;
-  top: 1.5vh;
-  right: 4vw;
-  border-radius: 2px;
+  img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
 }
 
 .restaurant-card-content {
@@ -246,6 +249,16 @@ a p {
   object-fit: inherit;
   border-radius: 0;
   padding: 10px;
+  position: absolute;
+}
+
+img[alt="Liked"] {
+  position: relative;
+  transition: opacity 600ms;
+  opacity: 0%;
+  &:hover {
+    @include heart-animation;
+  }
 }
 
 // ***** FOOTER *****
@@ -253,12 +266,39 @@ a p {
 footer {
   background-color: #353535;
   height: 186px;
-}
 
-footer img {
-  width: 11px;
-  height: 13px;
-  padding-right: 10px;
+  img {
+    width: 11px;
+    height: 13px;
+    padding-right: 10px;
+  }
+
+  h4 {
+    display: none;
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26.24px;
+    color: #ffffff;
+    width: 137.58px;
+    height: 27px;
+    padding: 20px 0 20px 40px;
+  }
+
+  ul {
+    width: 190px;
+    height: 99px;
+  }
+
+  li {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #ffffff;
+    padding: 5px 0;
+  }
 }
 
 img[alt="Logo Ohmyfood"] {
@@ -268,33 +308,6 @@ img[alt="Logo Ohmyfood"] {
   height: 20px;
   padding: 20px 0 10px 0;
   margin-left: 40px;
-}
-
-footer h4 {
-  display: none;
-  font-family: "Shrikhand", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 18px;
-  line-height: 26.24px;
-  color: #ffffff;
-  width: 137.58px;
-  height: 27px;
-  padding: 20px 0 20px 40px;
-}
-
-footer ul {
-  width: 190px;
-  height: 99px;
-}
-
-footer li {
-  list-style-type: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18.75px;
-  color: #ffffff;
-  padding: 5px 0;
 }
 
 // ***** RESTAURANT PREVIEW *****
@@ -318,113 +331,140 @@ footer li {
   justify-content: space-around;
   align-items: center;
   padding: 10px 30px 10px 10px;
-}
 
-.menu-title h1 {
-  font-family: "Shrikhand", sans-serif;
-  height: 29px;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40.82px;
-  padding-right: 17px;
-}
+  h1 {
+    font-family: "Shrikhand", sans-serif;
+    height: 29px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40.82px;
+    padding-right: 17px;
+  }
 
-.menu-title img {
-  width: 22px;
-  height: 21px;
-  margin-top: 7px;
-  color: #101010;
+  img {
+    width: 22px;
+    height: 21px;
+    margin-top: 7px;
+    color: #101010;
+    position: absolute;
+    right: 30px;
+  }
 }
 
 // ***** MENU ITEMS *****
 
 .menu-items {
   margin: 10px auto;
+
+  h2 {
+    border-bottom: 3px solid #99e2d0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18.75px;
+    width: 40px;
+    margin: 20px 0 10px 15px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+    padding-bottom: 5px;
+  }
+
+  h4 {
+    font-size: 15.04px;
+    font-weight: 300;
+    max-width: 280px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  li {
+    background-color: #ffffff;
+    margin: 15px 0;
+    border-radius: 15px;
+    padding: 0 0 0 10px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4.01px 15.04px 0 #00000010;
+    &:hover {
+      @include slider;
+      @include checked-logo;
+    }
+  }
+
+  p {
+    margin-top: 27px;
+    font-weight: 700;
+    font-size: 15.04px;
+    line-height: 17.63px;
+    color: #353535;
+    margin-right: 28vw;
+    width: 100%;
+  }
 }
 
-.menu-items h2 {
-  border-bottom: 3px solid #99e2d0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 18.75px;
-  width: 40px;
-  margin: 20px 0 10px 15px;
-}
-
-.menu-items h3 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21.09px;
-  padding-bottom: 5px;
-}
-
-.menu-items h4 {
-  font-size: 15.04px;
-  font-weight: 300;
-}
-
-.menu-items ul {
-  list-style-type: none;
-  padding-inline-start: 0;
-  width: 92%;
-  margin: 0 auto;
-}
-
-.menu-items li {
-  background-color: #ffffff;
-  margin: 15px 0;
-  border-radius: 15px;
-  padding: 0 15px;
+.slider {
+  background-color: $color-slider;
+  width: 0vw;
   height: 69px;
+  border-radius: 0 15px 15px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 4.01px 15.04px 0 #00000010;
-}
-
-.menu-items p {
-  margin-top: 27px;
-  font-weight: 700;
-  font-size: 15.04px;
-  line-height: 17.63px;
-  color: #353535;
+  transition: all 400ms;
+  & img {
+    display: none;
+    position: absolute;
+  }
 }
 
 .menu-button {
   display: flex;
   align-items: center;
-}
 
-.menu-button button {
-  background: linear-gradient(
-    0deg,
-    $color-primary 1%,
-    rgba(255, 121, 218, 1) 99%
-  );
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  margin: 25px auto 45px;
-  padding: 15px 25px;
-  width: 186px;
-  height: 50px;
-  border-radius: 25px;
-  border: 0 solid transparent;
-  box-shadow: 0 4px 4px 0 #00000025;
+  button {
+    background: linear-gradient(
+      0deg,
+      $color-primary 1%,
+      rgba(255, 121, 218, 1) 99%
+    );
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    margin: 25px auto 45px;
+    padding: 15px 25px;
+    width: 186px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0 solid transparent;
+    box-shadow: 0 4px 4px 0 #00000025;
+    &:hover {
+      @include hover;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .functioning {
     height: 228px;
-  }
 
-  .functioning ul {
-    margin: auto;
-    flex-direction: row;
-    width: 89%;
-    gap: 40px;
-    max-width: 1053px;
+    ul {
+      margin: auto;
+      flex-direction: row;
+      width: 89%;
+      gap: 40px;
+      max-width: 1053px;
+    }
   }
 
   .restaurants-cards {
@@ -438,12 +478,27 @@ footer li {
 
   .restaurant-card {
     width: 45%;
+    p {
+      right: 2vw;
+    }
   }
 
   footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+
+    ul {
+      display: flex;
+      width: 50%;
+      margin-right: -115px;
+      max-width: 670px;
+    }
+
+    li {
+      padding-right: 35px;
+      padding-top: 65px;
+    }
   }
 
   .footer-logo {
@@ -452,17 +507,5 @@ footer li {
 
   img[alt="Logo Ohmyfood"] {
     padding: 20px 0 10px 70px;
-  }
-
-  footer ul {
-    display: flex;
-    width: 50%;
-    margin-right: -115px;
-    max-width: 670px;
-  }
-
-  footer li {
-    padding-right: 35px;
-    padding-top: 65px;
   }
 }

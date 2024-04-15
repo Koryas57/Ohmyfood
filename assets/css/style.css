@@ -1,14 +1,11 @@
 /* Importer dans l'ordre */
-/* Pour le header */
-header {
-  width: 100%;
-  height: 50vh;
-  color: #9356DC;
-}
-
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +14,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 header {
@@ -28,7 +26,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 header img {
   height: 34px;
   width: 197px;
@@ -51,13 +48,11 @@ img[alt="Fleche de retour"] {
   align-items: center;
   justify-content: center;
 }
-
 .location img {
   width: 12px;
   height: 16px;
   margin: 0 15px 0 -18px;
 }
-
 .location button {
   border-style: none;
   background-color: #eaeaea;
@@ -66,13 +61,12 @@ img[alt="Fleche de retour"] {
   line-height: 18.75px;
 }
 
-section .title {
+.title {
   height: 68px;
 }
-
 .title h1 {
   height: 68px;
-  width: 275px;
+  width: 62%;
   margin: 40px auto 0;
   font-weight: 700;
   font-size: 24px;
@@ -84,13 +78,20 @@ section .title {
   display: flex;
   flex-direction: column;
 }
-
 .browser-button a {
   text-align: center;
 }
-
+.browser-button p {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 96%;
+  height: 46px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.09px;
+}
 .browser-button button {
-  background: linear-gradient(0deg, #9356DC 1%, rgb(255, 121, 218) 99%);
+  background: linear-gradient(0deg, #9356dc 1%, #ff79da 99%);
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -102,15 +103,9 @@ section .title {
   border: 0 solid transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
 }
-
-.browser-button p {
-  margin: 0 auto 30px;
-  text-align: center;
-  width: 96%;
-  height: 46px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21.09px;
+.browser-button button:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }
 
 .functioning {
@@ -118,14 +113,12 @@ section .title {
   height: 440px;
   margin: 50px 0;
 }
-
 .functioning .title {
   padding-top: 40px;
   width: 90%;
   margin: auto;
   max-width: 1060px;
 }
-
 .functioning ul {
   padding-inline-start: 0;
   display: flex;
@@ -134,8 +127,7 @@ section .title {
   width: 100%;
   gap: 30px;
 }
-
-.functioning-button span {
+.functioning span {
   position: absolute;
   top: 50%;
   left: 0;
@@ -150,8 +142,7 @@ section .title {
   font-weight: 500;
   font-size: 14.18px;
 }
-
-.functioning-button {
+.functioning li {
   position: relative;
   display: flex;
   align-items: center;
@@ -187,21 +178,12 @@ section .title {
   background-color: #ffffff;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.062745098);
 }
-
 .restaurant-card a {
   display: block;
   height: 175px;
   position: relative;
 }
-
-.restaurant-card img {
-  width: 100%;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-
-a p {
+.restaurant-card a p {
   margin-block-start: 0;
   height: 16px;
   width: 61.37px;
@@ -213,8 +195,14 @@ a p {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.0823529412);
   position: absolute;
   top: 1.5vh;
-  right: 4vw;
+  right: 3.5vw;
   border-radius: 2px;
+}
+.restaurant-card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .restaurant-card-content {
@@ -233,28 +221,27 @@ a p {
   object-fit: inherit;
   border-radius: 0;
   padding: 10px;
+  position: absolute;
+}
+
+img[alt=Liked] {
+  position: relative;
+  transition: opacity 600ms;
+  opacity: 0%;
+}
+img[alt=Liked]:hover {
+  opacity: 100%;
 }
 
 footer {
   background-color: #353535;
   height: 186px;
 }
-
 footer img {
   width: 11px;
   height: 13px;
   padding-right: 10px;
 }
-
-img[alt="Logo Ohmyfood"] {
-  /* display: none; */
-  filter: invert(150);
-  width: 100.58px;
-  height: 20px;
-  padding: 20px 0 10px 0;
-  margin-left: 40px;
-}
-
 footer h4 {
   display: none;
   font-family: "Shrikhand", sans-serif;
@@ -267,12 +254,10 @@ footer h4 {
   height: 27px;
   padding: 20px 0 20px 40px;
 }
-
 footer ul {
   width: 190px;
   height: 99px;
 }
-
 footer li {
   list-style-type: none;
   font-weight: 500;
@@ -280,6 +265,15 @@ footer li {
   line-height: 18.75px;
   color: #ffffff;
   padding: 5px 0;
+}
+
+img[alt="Logo Ohmyfood"] {
+  /* display: none; */
+  filter: invert(150);
+  width: 100.58px;
+  height: 20px;
+  padding: 20px 0 10px 0;
+  margin-left: 40px;
 }
 
 .restaurant-preview img {
@@ -302,7 +296,6 @@ footer li {
   align-items: center;
   padding: 10px 30px 10px 10px;
 }
-
 .menu-title h1 {
   font-family: "Shrikhand", sans-serif;
   height: 29px;
@@ -311,18 +304,18 @@ footer li {
   line-height: 40.82px;
   padding-right: 17px;
 }
-
 .menu-title img {
   width: 22px;
   height: 21px;
   margin-top: 7px;
   color: #101010;
+  position: absolute;
+  right: 30px;
 }
 
 .menu-items {
   margin: 10px auto;
 }
-
 .menu-items h2 {
   border-bottom: 3px solid #99e2d0;
   font-weight: 300;
@@ -331,53 +324,72 @@ footer li {
   width: 40px;
   margin: 20px 0 10px 15px;
 }
-
 .menu-items h3 {
   font-weight: 500;
   font-size: 18px;
   line-height: 21.09px;
   padding-bottom: 5px;
 }
-
 .menu-items h4 {
   font-size: 15.04px;
   font-weight: 300;
+  max-width: 280px;
 }
-
 .menu-items ul {
   list-style-type: none;
   padding-inline-start: 0;
   width: 92%;
   margin: 0 auto;
 }
-
 .menu-items li {
   background-color: #ffffff;
   margin: 15px 0;
   border-radius: 15px;
-  padding: 0 15px;
+  padding: 0 0 0 10px;
   height: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.062745098);
 }
-
+.menu-items li:hover .slider {
+  transform: scaleX(1);
+  width: 15vw;
+}
+.menu-items li:hover img[alt="Symbole de validation"] {
+  display: block;
+}
 .menu-items p {
   margin-top: 27px;
   font-weight: 700;
   font-size: 15.04px;
   line-height: 17.63px;
   color: #353535;
+  margin-right: 28vw;
+  width: 100%;
+}
+
+.slider {
+  background-color: #99e2d0;
+  width: 0vw;
+  height: 69px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+}
+.slider img {
+  display: none;
+  position: absolute;
 }
 
 .menu-button {
   display: flex;
   align-items: center;
 }
-
 .menu-button button {
-  background: linear-gradient(0deg, #9356DC 1%, rgb(255, 121, 218) 99%);
+  background: linear-gradient(0deg, #9356dc 1%, rgb(255, 121, 218) 99%);
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -389,6 +401,10 @@ footer li {
   border-radius: 25px;
   border: 0 solid transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
+}
+.menu-button button:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }
 
 @media screen and (min-width: 1024px) {
@@ -413,16 +429,13 @@ footer li {
   .restaurant-card {
     width: 45%;
   }
+  .restaurant-card p {
+    right: 2vw;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-  }
-  .footer-logo {
-    margin: 0 30px 0 0px;
-  }
-  img[alt="Logo Ohmyfood"] {
-    padding: 20px 0 10px 70px;
   }
   footer ul {
     display: flex;
@@ -433,6 +446,12 @@ footer li {
   footer li {
     padding-right: 35px;
     padding-top: 65px;
+  }
+  .footer-logo {
+    margin: 0 30px 0 0px;
+  }
+  img[alt="Logo Ohmyfood"] {
+    padding: 20px 0 10px 70px;
   }
 }
 

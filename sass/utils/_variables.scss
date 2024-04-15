@@ -1,5 +1,29 @@
 // VAR COLORS
 
-$color-primary: #9356DC; 
-$color-secondary: #FF79DA;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-slider: #99e2d0;
 
+// MIXIN
+
+@mixin hover {
+  background: linear-gradient(0deg, #9356dcc2 1%, #ff79dabd 99%);
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
+}
+
+@mixin heart-animation {
+  opacity: 100%;
+}
+
+@mixin slider {
+  .slider {
+    transform: scaleX(1);
+    width: 15vw;
+  }
+}
+
+@mixin checked-logo {
+  img[alt="Symbole de validation"] {
+    display: block;
+  }
+}
