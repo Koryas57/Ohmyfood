@@ -19,11 +19,23 @@ $color-slider: #99e2d0;
   .slider {
     transform: scaleX(1);
     width: 15vw;
+    @media screen and (min-width: 1024px) {
+      width: 5vw;
+    }
   }
 }
 
 @mixin checked-logo {
   img[alt="Symbole de validation"] {
     display: block;
+  }
+}
+
+@mixin price-sliding {
+  .slider p {
+    margin-right: 24vw;
+    @media screen and (min-width: 1024px) {
+      margin-right: 10vw;
+    }
   }
 }
