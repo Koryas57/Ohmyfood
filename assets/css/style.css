@@ -484,7 +484,6 @@ img[alt="Logo Ohmyfood"] {
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
-    width: 100vw;
   }
   footer ul {
     display: flex;
