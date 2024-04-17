@@ -18,8 +18,9 @@ body {
   background-color: #f6f6f6;
 }
 
-main {
-  height: 121vh;
+.restaurant-page-main {
+  height: 1100px;
+  background: white;
 }
 
 a {
@@ -464,10 +465,6 @@ img[alt="Logo Ohmyfood"] {
 @media screen and (min-width: 1024px) {
   main {
     width: 100%;
-  }
-
-  .white-background {
-    background: white;
   }
 
   .functioning {
