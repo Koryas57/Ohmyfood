@@ -19,7 +19,12 @@ body {
 }
 
 .restaurant-page-main {
-  height: 1100px;
+  height: 1080px;
+  background: white;
+}
+
+.restaurant-page-main-long {
+  height: 1205px;
   background: white;
 }
 
@@ -124,7 +129,7 @@ img[alt="Fleche de retour"] {
     border: 0 solid transparent;
     box-shadow: 0 4px 4px 0 #00000025;
     &:hover {
-      @include hover;
+      @include highlight;
     }
   }
 }
@@ -226,7 +231,7 @@ img[alt="Fleche de retour"] {
       box-shadow: 0 2px 4px 0 #00000015;
       position: absolute;
       top: 1.5vh;
-      right: 3.5vw;
+      right: 4vw;
       border-radius: 2px;
     }
   }
@@ -333,11 +338,19 @@ img[alt="Logo Ohmyfood"] {
   width: 100%;
 }
 
+.restaurant-menu-long {
+  position: absolute;
+  top: 275px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+}
+
 .menu-title {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  padding: 30px 30px 10px 10px;
+  padding: 30px 30px 30px 0px;
+  margin-left: 15px;
 
   h1 {
     font-family: "Shrikhand", sans-serif;
@@ -392,6 +405,12 @@ img[alt="Logo Ohmyfood"] {
     margin: 0 auto;
   }
 
+  a:focus {
+    @include slider;
+    @include checked-logo;
+    @include price-sliding;
+  }
+
   li {
     background-color: #ffffff;
     margin: 15px 0;
@@ -402,11 +421,11 @@ img[alt="Logo Ohmyfood"] {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4.01px 15.04px 0 #00000010;
-    &:hover {
-      @include slider;
-      @include checked-logo;
-      @include price-sliding;
-    }
+    // &:hover {
+    //   @include slider;
+    //   @include checked-logo;
+    //   @include price-sliding;
+    // }
   }
 
   p {
@@ -438,6 +457,7 @@ img[alt="Logo Ohmyfood"] {
 .menu-button {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   button {
     background: linear-gradient(
@@ -457,7 +477,7 @@ img[alt="Logo Ohmyfood"] {
     border: 0 solid transparent;
     box-shadow: 0 4px 4px 0 #00000025;
     &:hover {
-      @include hover;
+      @include highlight;
     }
   }
 }
@@ -501,9 +521,22 @@ img[alt="Logo Ohmyfood"] {
     margin-right: 100px;
   }
 
+  .restaurant-page-main {
+    height: 1100px;
+    background: white;
+  }
+
   .restaurant-menu {
     max-width: 1055px;
     height: 1221px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+  }
+
+  .restaurant-menu-long {
+    max-width: 1055px;
+    height: 1280px;
     margin: 0 auto;
     position: relative;
     top: -50px;
@@ -520,8 +553,8 @@ img[alt="Logo Ohmyfood"] {
 
   .restaurant-card {
     width: 45%;
-    p {
-      right: 2vw;
+    a p {
+      right: 1vw;
     }
   }
 

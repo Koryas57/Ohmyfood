@@ -6,7 +6,7 @@ $color-slider: #99e2d0;
 
 // MIXIN
 
-@mixin hover {
+@mixin highlight {
   background: linear-gradient(0deg, #9356dcc2 1%, #ff79dabd 99%);
   box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }
