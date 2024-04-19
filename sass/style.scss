@@ -310,6 +310,9 @@ footer {
     line-height: 18.75px;
     color: #ffffff;
     padding: 5px 0;
+    a {
+      position: relative;
+    }
   }
 }
 
@@ -572,7 +575,10 @@ img[alt="Logo Ohmyfood"] {
 
     li {
       padding-right: 35px;
-      padding-top: 65px;
+      margin-top: 65px;
+      a {
+        position: relative;
+      }
     }
   }
 

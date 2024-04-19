@@ -278,6 +278,9 @@ footer li {
   color: #ffffff;
   padding: 5px 0;
 }
+footer li a {
+  position: relative;
+}
 
 img[alt="Logo Ohmyfood"] {
   /* display: none; */
@@ -518,7 +521,10 @@ img[alt="Logo Ohmyfood"] {
   }
   footer li {
     padding-right: 35px;
-    padding-top: 65px;
+    margin-top: 65px;
+  }
+  footer li a {
+    position: relative;
   }
   .footer-logo {
     margin: 0 30px 0 0px;
