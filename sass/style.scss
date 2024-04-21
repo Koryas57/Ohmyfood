@@ -1,9 +1,10 @@
 // ***** IMPORTS *****
 
 @import "./utils/_variables.scss"; /* Importer dans l'ordre */
+@import "./animations.scss";
+@import "./loading-spinner.scss";
 
 // ***** GLOBAL RULES *****
-
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;

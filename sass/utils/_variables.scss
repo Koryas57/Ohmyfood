@@ -2,7 +2,16 @@
 
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
 $color-slider: #99e2d0;
+$icons-delay: 610ms;
+$gradient-loader: linear-gradient(
+  to top,
+  lighten($color-primary, 10%),
+  $color-secondary,
+  transparent,
+  transparent
+);
 
 // MIXIN
 
@@ -38,4 +47,8 @@ $color-slider: #99e2d0;
       margin-right: 10vw;
     }
   }
+}
+
+@mixin circle {
+  border-radius: 50%;
 }
