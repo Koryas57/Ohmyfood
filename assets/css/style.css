@@ -1,3 +1,50 @@
+@keyframes Displaying {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: rotateY(180deg) rotateX(2turn);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Displaying-ul {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Displaying-title {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Importer dans l'ordre */
 @keyframes loading-appear {
   50% {
@@ -585,6 +632,10 @@ img[alt="Logo Ohmyfood"] {
   line-height: 18.75px;
   width: 40px;
   margin: 20px 0 10px 15px;
+  animation-name: Displaying-title;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-iteration-count: 1;
 }
 .menu-items h3 {
   font-weight: 500;
@@ -602,26 +653,10 @@ img[alt="Logo Ohmyfood"] {
   padding-inline-start: 0;
   width: 92%;
   margin: 0 auto;
-}
-.menu-items a:focus .slider {
-  transform: scaleX(1);
-  width: 15vw;
-}
-@media screen and (min-width: 1024px) {
-  .menu-items a:focus .slider {
-    width: 5vw;
-  }
-}
-.menu-items a:focus img[alt="Symbole de validation"] {
-  display: block;
-}
-.menu-items a:focus .slider p {
-  margin-right: 24vw;
-}
-@media screen and (min-width: 1024px) {
-  .menu-items a:focus .slider p {
-    margin-right: 10vw;
-  }
+  animation-name: Displaying-ul;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 .menu-items li {
   background-color: #ffffff;
@@ -633,6 +668,30 @@ img[alt="Logo Ohmyfood"] {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.062745098);
+  animation-name: Displaying;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.39, 0.57, 0, 1.15);
+  animation-iteration-count: 1;
+}
+.menu-items li:hover .slider {
+  transform: scaleX(1);
+  width: 15vw;
+}
+@media screen and (min-width: 1024px) {
+  .menu-items li:hover .slider {
+    width: 5vw;
+  }
+}
+.menu-items li:hover img[alt="Symbole de validation"] {
+  display: block;
+}
+.menu-items li:hover .slider p {
+  margin-right: 24vw;
+}
+@media screen and (min-width: 1024px) {
+  .menu-items li:hover .slider p {
+    margin-right: 10vw;
+  }
 }
 .menu-items p {
   margin-top: 27px;
@@ -642,6 +701,18 @@ img[alt="Logo Ohmyfood"] {
   color: #353535;
   margin-right: 18vw;
   width: 100%;
+}
+
+.appetizer {
+  animation-delay: 0.33s;
+}
+
+.meal {
+  animation-delay: 0.66s;
+}
+
+.dessert {
+  animation-delay: 0.99s;
 }
 
 .slider {

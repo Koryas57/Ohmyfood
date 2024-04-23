@@ -387,6 +387,10 @@ img[alt="Logo Ohmyfood"] {
     line-height: 18.75px;
     width: 40px;
     margin: 20px 0 10px 15px;
+    animation-name: Displaying-title;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    animation-iteration-count: 1;
   }
 
   h3 {
@@ -407,12 +411,10 @@ img[alt="Logo Ohmyfood"] {
     padding-inline-start: 0;
     width: 92%;
     margin: 0 auto;
-  }
-
-  a:focus {
-    @include slider;
-    @include checked-logo;
-    @include price-sliding;
+    animation-name: Displaying-ul;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
   }
 
   li {
@@ -425,11 +427,15 @@ img[alt="Logo Ohmyfood"] {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4.01px 15.04px 0 #00000010;
-    // &:hover {
-    //   @include slider;
-    //   @include checked-logo;
-    //   @include price-sliding;
-    // }
+    animation-name: Displaying;
+    animation-duration: 2.5s;
+    animation-timing-function: cubic-bezier(0.39, 0.57, 0, 1.15);
+    animation-iteration-count: 1;
+    &:hover {
+      @include slider;
+      @include checked-logo;
+      @include price-sliding;
+    }
   }
 
   p {
@@ -441,6 +447,18 @@ img[alt="Logo Ohmyfood"] {
     margin-right: 18vw;
     width: 100%;
   }
+}
+
+.appetizer {
+  animation-delay: 0.33s;
+}
+
+.meal {
+  animation-delay: 0.66s;
+}
+
+.dessert {
+  animation-delay: 0.99s;
 }
 
 .slider {

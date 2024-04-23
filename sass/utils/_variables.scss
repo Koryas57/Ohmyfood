@@ -4,7 +4,7 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $color-slider: #99e2d0;
-$icons-delay: 610ms;
+
 $gradient-loader: linear-gradient(
   to top,
   lighten($color-primary, 10%),
@@ -12,6 +12,10 @@ $gradient-loader: linear-gradient(
   transparent,
   transparent
 );
+
+// VAR TIMING
+
+$icons-delay: 610ms;
 
 // MIXIN
 
@@ -51,4 +55,62 @@ $gradient-loader: linear-gradient(
 
 @mixin circle {
   border-radius: 50%;
+}
+
+@mixin goldy {
+  border: 10px solid gold;
+}
+
+// KEYFRAMES
+
+@keyframes Displaying {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: rotateY(180deg) rotateX(2turn);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Displaying-ul {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Displaying-title {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 1;
+  }
 }
