@@ -1,8 +1,8 @@
 // ***** IMPORTS *****
 
 @import "./utils/_variables.scss"; /* Importer dans l'ordre */
-@import "./animations.scss";
-@import "./loading-spinner.scss";
+@import "./utils/keyframes.scss";
+@import "./utils/loader.scss";
 
 // ***** GLOBAL RULES *****
 * {
