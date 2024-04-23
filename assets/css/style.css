@@ -642,11 +642,12 @@ img[alt="Logo Ohmyfood"] {
   font-size: 18px;
   line-height: 21.09px;
   padding-bottom: 5px;
+  max-width: 100%;
 }
 .menu-items h4 {
   font-size: 15.04px;
   font-weight: 300;
-  max-width: 280px;
+  max-width: 100%;
 }
 .menu-items ul {
   list-style-type: none;
@@ -675,7 +676,7 @@ img[alt="Logo Ohmyfood"] {
 }
 .menu-items li:hover .slider {
   transform: scaleX(1);
-  width: 15vw;
+  width: 17%;
 }
 @media screen and (min-width: 1024px) {
   .menu-items li:hover .slider {
@@ -692,6 +693,15 @@ img[alt="Logo Ohmyfood"] {
   .menu-items li:hover .slider p {
     margin-right: 10vw;
   }
+}
+.menu-items li:hover h3,
+.menu-items li:hover h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+.menu-items li:hover .menu-text {
+  width: 68%;
 }
 .menu-items p {
   margin-top: 27px;
@@ -728,6 +738,10 @@ img[alt="Logo Ohmyfood"] {
 .slider img {
   display: none;
   position: absolute;
+}
+
+.menu-text {
+  width: 82%;
 }
 
 .menu-button {

@@ -31,7 +31,7 @@ $icons-delay: 610ms;
 @mixin slider {
   .slider {
     transform: scaleX(1);
-    width: 15vw;
+    width: 17%;
     @media screen and (min-width: 1024px) {
       width: 5vw;
     }

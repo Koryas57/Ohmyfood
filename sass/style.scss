@@ -398,12 +398,13 @@ img[alt="Logo Ohmyfood"] {
     font-size: 18px;
     line-height: 21.09px;
     padding-bottom: 5px;
+    max-width: 100%;
   }
 
   h4 {
     font-size: 15.04px;
     font-weight: 300;
-    max-width: 280px;
+    max-width: 100%;
   }
 
   ul {
@@ -435,6 +436,15 @@ img[alt="Logo Ohmyfood"] {
       @include slider;
       @include checked-logo;
       @include price-sliding;
+      & h3,
+      h4 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-wrap: nowrap;
+      }
+      & .menu-text {
+        width: 68%;
+      }
     }
   }
 
@@ -474,6 +484,10 @@ img[alt="Logo Ohmyfood"] {
     display: none;
     position: absolute;
   }
+}
+
+.menu-text {
+  width: 82%;
 }
 
 .menu-button {
