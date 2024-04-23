@@ -117,6 +117,27 @@
     opacity: 1;
   }
 }
+@keyframes Displaying-li {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: rotateY(180deg) rotateX(2turn);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes Displaying-title {
   0% {
     opacity: 0;
@@ -561,7 +582,7 @@ img[alt="Logo Ohmyfood"] {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.062745098);
-  animation-name: Displaying;
+  animation-name: Displaying-li;
   animation-duration: 2.5s;
   animation-timing-function: cubic-bezier(0.39, 0.57, 0, 1.15);
   animation-iteration-count: 1;

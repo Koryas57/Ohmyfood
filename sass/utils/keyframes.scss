@@ -135,6 +135,30 @@
   }
 }
 
+@keyframes Displaying-li {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: rotateY(180deg) rotateX(2turn);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes Displaying-title {
   0% {
     opacity: 0;

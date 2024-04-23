@@ -5,6 +5,7 @@
 @import "./utils/loader.scss";
 
 // ***** GLOBAL RULES *****
+
 * {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -428,7 +429,7 @@ img[alt="Logo Ohmyfood"] {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4.01px 15.04px 0 #00000010;
-    animation-name: Displaying;
+    animation-name: Displaying-li;
     animation-duration: 2.5s;
     animation-timing-function: cubic-bezier(0.39, 0.57, 0, 1.15);
     animation-iteration-count: 1;
