@@ -8,9 +8,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(226, 224, 224);
+  background-color: #000000e0;
   animation-name: Displaying-background;
-  animation-duration: 5s;
+  animation-duration: 5.1s;
   opacity: 0;
   animation-iteration-count: 1;
   z-index: -9;
@@ -22,23 +22,27 @@
   align-items: center;
   width: 200px;
   height: 50px;
-  border: 4px solid #9356dcc2;
+  border: 5px solid white;
   border-radius: 14px;
-  padding: 2px 1.2px 2px 1.2px;
+  box-shadow: 4px 4px 30px white, 4px 4px 30px #9356dcc2;
   animation-name: Displaying;
   animation-duration: 5s;
   animation-iteration-count: 1;
-}
-
-.loading-bar::before {
-  content: "";
-  transform-origin: left;
-  transform: scaleX(0);
-  width: 200px;
-  height: 50px;
-  border-radius: 14px;
-  background: linear-gradient(-90deg, #9356dcc2 1%, #ff79dabd 99%);
-  animation-name: Fillin;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
+  &::before {
+    content: "ohmyfood";
+    color: black;
+    font-size: 35px;
+    padding: 0 2px;
+    font-family: "Shrikhand", sans-serif;
+    text-align: center;
+    transform-origin: left;
+    transform: scaleX(0);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(-90deg, #9356dcc2 1%, #ff79dabd 99%);
+    animation-name: Fillin;
+    animation-duration: 4.9s;
+    animation-iteration-count: 1;
+  }
 }

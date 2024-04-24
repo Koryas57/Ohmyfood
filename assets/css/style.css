@@ -1,46 +1,35 @@
 /* Importer dans l'ordre */
 @keyframes Displaying {
   1% {
-    opacity: 0.1;
-  }
-  2% {
-    opacity: 0.2;
-  }
-  3% {
-    opacity: 0.3;
-  }
-  4% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.5;
-  }
-  6% {
-    opacity: 0.6;
-  }
-  7% {
-    opacity: 0.7;
-  }
-  8% {
-    opacity: 0.8;
-  }
-  9% {
-    opacity: 0.9;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
   }
   10% {
     opacity: 1;
+    width: 100px;
+    height: 100px;
+  }
+  15% {
+    width: 150px;
+    height: 150px;
+  }
+  25% {
+    width: 10px;
+    height: 10px;
+    transform: perspective(100px) rotateY(1turn) rotate(10turn);
+  }
+  40% {
+    width: 200px;
+    height: 100px;
+  }
+  50% {
+    width: 200px;
+    height: 50px;
   }
   95% {
     opacity: 1;
-  }
-  96% {
-    opacity: 0.9;
-  }
-  97% {
-    opacity: 0.8;
-  }
-  98% {
-    opacity: 0.6;
   }
   100% {
     opacity: 0;
@@ -51,8 +40,8 @@
     opacity: 1;
     z-index: 1;
   }
-  96% {
-    opacity: 0.8;
+  95% {
+    opacity: 1;
   }
   99% {
     z-index: 1;
@@ -64,12 +53,14 @@
 }
 @keyframes Fillin {
   10% {
+    opacity: 0;
     transform: scaleX(0.1);
   }
   20% {
     transform: scaleX(0.2);
   }
   25% {
+    opacity: 0;
     transform: scaleX(0.25);
   }
   30% {
@@ -82,7 +73,8 @@
     transform: scaleX(0.45);
   }
   50% {
-    transform: rotateY(180deg) rotateX(180deg) scaleX(0.5);
+    opacity: 0.2;
+    transform: scaleX(0.5);
   }
   60% {
     transform: scaleX(0.6);
@@ -94,10 +86,10 @@
     transform: scaleX(0.8);
   }
   90% {
-    transform: scaleX(0.9);
+    transform: scaleX(0.82);
   }
   95% {
-    transform: scaleX(1);
+    transform: scaleX(0.9);
   }
   99% {
     transform: scaleX(1);
@@ -118,15 +110,6 @@
   }
 }
 @keyframes Displaying-li {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
   50% {
     opacity: 0;
     transform: rotateY(180deg) rotateX(2turn);
@@ -139,9 +122,6 @@
   }
 }
 @keyframes Displaying-title {
-  0% {
-    opacity: 0;
-  }
   25% {
     opacity: 0;
     transform: translateX(300px);
@@ -163,9 +143,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(226, 224, 224);
+  background-color: rgba(0, 0, 0, 0.8784313725);
   animation-name: Displaying-background;
-  animation-duration: 5s;
+  animation-duration: 5.1s;
   opacity: 0;
   animation-iteration-count: 1;
   z-index: -9;
@@ -177,24 +157,28 @@
   align-items: center;
   width: 200px;
   height: 50px;
-  border: 4px solid rgba(147, 86, 220, 0.7607843137);
+  border: 5px solid white;
   border-radius: 14px;
-  padding: 2px 1.2px 2px 1.2px;
+  box-shadow: 4px 4px 30px white, 4px 4px 30px rgba(147, 86, 220, 0.7607843137);
   animation-name: Displaying;
   animation-duration: 5s;
   animation-iteration-count: 1;
 }
-
 .loading-bar::before {
-  content: "";
+  content: "ohmyfood";
+  color: black;
+  font-size: 35px;
+  padding: 0 2px;
+  font-family: "Shrikhand", sans-serif;
+  text-align: center;
   transform-origin: left;
   transform: scaleX(0);
   width: 200px;
   height: 50px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: linear-gradient(-90deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
   animation-name: Fillin;
-  animation-duration: 5s;
+  animation-duration: 4.9s;
   animation-iteration-count: 1;
 }
 
