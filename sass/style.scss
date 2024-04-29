@@ -150,7 +150,7 @@ img[alt="Fleche de retour"] {
     max-width: 1060px;
   }
 
-  ul {
+  ol {
     padding-inline-start: 0;
     display: flex;
     flex-direction: column;
@@ -189,7 +189,7 @@ img[alt="Fleche de retour"] {
     text-align: center;
     background-color: #f6f6f6;
     border-radius: 20px;
-    box-shadow: 0 4px 15px #00000015;
+    box-shadow: 0 4px 15px 0 #00000015;
   }
 }
 
@@ -217,11 +217,12 @@ img[alt="Fleche de retour"] {
   box-shadow: 0 4px 15px 0 #00000010;
 
   a {
-    display: block;
-    height: 175px;
+    display: flex;
+    width: 100%;
     position: relative;
+    justify-content: space-between;
 
-    p {
+    .new {
       margin-block-start: 0;
       height: 16px;
       width: 61.37px;
@@ -252,17 +253,25 @@ img[alt="Fleche de retour"] {
   justify-content: space-between;
 }
 
-.card-content-txt h3 {
-  padding-bottom: 5px;
+.card-content-txt {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  & h3 {
+    padding-bottom: 5px;
+  }
 }
 
-.card-heart img {
-  width: 22px;
-  height: 21px;
-  object-fit: inherit;
-  border-radius: 0;
-  padding: 10px;
-  position: absolute;
+.card-heart {
+  padding: 14px;
+  & img {
+    width: 22px;
+    height: 21px;
+    object-fit: inherit;
+    border-radius: 0;
+    padding: 10px;
+    position: absolute;
+  }
 }
 
 img[alt="Liked"] {
@@ -447,6 +456,10 @@ img[alt="Logo Ohmyfood"] {
         width: 68%;
       }
     }
+    & a {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   p {
@@ -488,13 +501,24 @@ img[alt="Logo Ohmyfood"] {
 }
 
 .menu-text {
-  width: 82%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  & a {
+    display: flex;
+    height: 50px;
+    margin-top: 16px;
+    align-items: center;
+    cursor: default;
+  }
 
   button {
     background: linear-gradient(
@@ -506,8 +530,7 @@ img[alt="Logo Ohmyfood"] {
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
-    margin: 25px auto 45px;
-    padding: 15px 25px;
+    padding-inline: 0;
     width: 186px;
     height: 50px;
     border-radius: 25px;
@@ -527,7 +550,7 @@ img[alt="Logo Ohmyfood"] {
   .functioning {
     height: 228px;
 
-    ul {
+    ol {
       margin: auto;
       flex-direction: row;
       width: 89%;
@@ -590,7 +613,7 @@ img[alt="Logo Ohmyfood"] {
 
   .restaurant-card {
     width: 45%;
-    a p {
+    a .new {
       right: 1vw;
     }
   }
