@@ -273,7 +273,20 @@ img[alt="Fleche de retour"] {
   flex-direction: column;
 }
 .browser-button a {
-  text-align: center;
+  background: linear-gradient(0deg, #9356dc 1%, #ff79da 99%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border: 0 solid transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
+}
+.browser-button a:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
+  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }
 .browser-button p {
   margin: 0 auto 30px;
@@ -283,23 +296,6 @@ img[alt="Fleche de retour"] {
   font-weight: 300;
   font-size: 18px;
   line-height: 21.09px;
-}
-.browser-button button {
-  background: linear-gradient(0deg, #9356dc 1%, #ff79da 99%);
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  margin: 0 auto;
-  padding: 15px 25px;
-  height: 50px;
-  border-radius: 25px;
-  border: 0 solid transparent;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
-}
-.browser-button button:hover {
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
-  box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }
 
 .functioning {
@@ -667,12 +663,9 @@ img[alt="Logo Ohmyfood"] {
 }
 .menu-button a {
   display: flex;
-  height: 50px;
   margin-top: 16px;
+  justify-content: center;
   align-items: center;
-  cursor: default;
-}
-.menu-button button {
   background: linear-gradient(0deg, #9356dc 1%, rgb(255, 121, 218) 99%);
   color: #ffffff;
   font-size: 16px;
@@ -685,7 +678,7 @@ img[alt="Logo Ohmyfood"] {
   border: 0 solid transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
 }
-.menu-button button:hover {
+.menu-button a:hover {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.7607843137) 1%, rgba(255, 121, 218, 0.7411764706) 99%);
   box-shadow: 3px 6px 4px rgba(0, 0, 0, 0.1450980392);
 }

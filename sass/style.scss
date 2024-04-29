@@ -105,7 +105,19 @@ img[alt="Fleche de retour"] {
   flex-direction: column;
 
   a {
-    text-align: center;
+    background: linear-gradient(0deg, $color-primary 1%, $color-secondary 99%);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: 0 solid transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1450980392);
+    &:hover {
+      @include highlight;
+    }
   }
 
   p {
@@ -116,23 +128,6 @@ img[alt="Fleche de retour"] {
     font-weight: 300;
     font-size: 18px;
     line-height: 21.09px;
-  }
-
-  button {
-    background: linear-gradient(0deg, $color-primary 1%, $color-secondary 99%);
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    margin: 0 auto;
-    padding: 15px 25px;
-    height: 50px;
-    border-radius: 25px;
-    border: 0 solid transparent;
-    box-shadow: 0 4px 4px 0 #00000025;
-    &:hover {
-      @include highlight;
-    }
   }
 }
 
@@ -516,13 +511,9 @@ img[alt="Logo Ohmyfood"] {
   justify-content: center;
   & a {
     display: flex;
-    height: 50px;
     margin-top: 16px;
+    justify-content: center;
     align-items: center;
-    cursor: default;
-  }
-
-  button {
     background: linear-gradient(
       0deg,
       $color-primary 1%,
